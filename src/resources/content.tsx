@@ -2,18 +2,18 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Waleed",
+  lastName: "Ahmad",
+  name: `Waleed Ahmad`,
+  role: "Software Engineer",
+  avatar: "/images/profile.png",
+  email: "iamwaleed07@gmail.com",
+  location: "Asia/Karachi", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Urdu"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>My weekly newsletter about creativity and engineering</>,
 };
@@ -25,27 +25,27 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/iamwaleed07",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/waleedrauf/",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.instagram.com/iamwaleed_7/",
     essential: false,
   },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-    essential: true,
-  },
+  // {
+  //   name: "Threads",
+  //   icon: "threads",
+  //   link: "https://www.threads.com/@once_ui",
+  //   essential: true,
+  // },
   {
     name: "Email",
     icon: "email",
@@ -60,12 +60,12 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Helping ideas move from design to production with clean, scalable code.</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Waleed</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
@@ -76,8 +76,8 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      I’m Waleed, a software engineer focused on building modern web applications with clean, reliable code.
+    </>
   ),
 };
 
@@ -88,13 +88,13 @@ const about: About = {
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
-    subItems: false,
+    subItems: true,
   },
   avatar: {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -102,9 +102,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Waleed is a full-stack software engineer who builds modern web applications with a strong focus on clarity, performance, and long-term maintainability. His work involves designing and developing reliable systems, crafting clean user interfaces, and solving complex technical problems with practical, well-structured solutions.
       </>
     ),
   },
@@ -113,41 +111,51 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Vaival Technologies",
+        timeframe: "2024 - Present",
+        role: "Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Designs, develops, and maintains scalable web applications and SaaS platforms, specializing in frontend & backend development, API integrations, cloud solutions (AWS), and workflow automation.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Focuses on writing clean, maintainable code, optimizing performance, and delivering robust, reliable software solutions.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Blurred Ego",
+        timeframe: "2021 - 2023",
+        role: "Full-Stack developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Deploys full-stack applications on AWS to ensure reliable hosting, scalability, and performance.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Builds RESTful APIs with Node.js and dynamic, interactive UIs with Next.js for seamless frontend-backend communication and smooth user experiences.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Blank Slate",
+        timeframe: "2019 - 2020",
+        role: "Full-Stack developer",
+        achievements: [
+          <>
+            Translated Figma designs into pixel-perfect, responsive web pages using HTML, CSS, React.js, and Next.js.
+          </>,
+          <>
+            Optimized frontend performance by implementing lazy loading, code-splitting, and other best practices for faster user experiences.
           </>,
         ],
         images: [],
@@ -156,15 +164,15 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Virtual University Of Pakistan",
+        description: <>Bachelor of Computer Science.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Government Graduate College of Science",
+        description: <>Intermediate In Computer Science.</>,
       },
     ],
   },
@@ -173,59 +181,81 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Next.js",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Building next gen apps with Next.js + React.js + Convex.</>
         ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/projects/project-01/project-2.png",
             alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
+            width: 14,
             height: 9,
           },
         ],
       },
       {
-        title: "Next.js",
+        title: "React.js",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Creating interactive and dynamic frontend experiences with React.js and modern libraries.</>
         ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
+            src: "/images/projects/project-01/project-3.png",
+            alt: "React.js project image",
+            width: 14,
             height: 9,
           },
+        ],
+      },
+      {
+        title: "Node.js",
+        description: (
+          <>Developing scalable backend services, REST APIs, and real-time applications with Node.js and Express.js.</>
+        ),
+        images: [
+          {
+            src: "/images/projects/project-01/project-1.png",
+            alt: "Node.js project image",
+            width: 14,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "NestJS",
+        description: (
+          <>Building modular, maintainable, and secure server-side applications using NestJS framework.</>
+        ),
+        images: [
+
+        ],
+      },
+      {
+        title: "AWS",
+        description: (
+          <>Deploying cloud-native applications, managing storage, servers, and scaling infrastructure on AWS.</>
+        ),
+        images: [
+
+        ],
+      },
+      {
+        title: "AI",
+        description: (
+          <>Integrating AI and machine learning models to create intelligent, automated web applications.</>
+        ),
+        images: [
+
+        ],
+      },
+      {
+        title: "n8n",
+        description: (
+          <>Automating workflows and connecting apps using n8n for seamless business processes.</>
+        ),
+        images: [
+
         ],
       },
     ],
